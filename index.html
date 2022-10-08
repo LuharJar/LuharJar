@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Form Test</title>
+    
+  </head>
+  <body onload="getLocation()" onload="getData()">
+    
+<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+<div class="container">
+   
+<h1>Welcome</h1>
+<h6>Fake data not appreciated.</h6>
+<form id="form"; reset();>
+  <div class="holders">
+     <div class="log_input">
+        
+
+    <label for="fname">Enter your name!</label>
+    <input type="text" name="fname" id="fname">
+  </div>
+  <div class="holders">
+    <label for="lname">Enter your last name!</label>
+    <input type="text" name="lname" id="lname">
+  </div>
+  
+  <div class="holders">
+    <label for="bgname">Enter the name of your bf/gf!</label>
+    <input type="text" name="bgname" id="bgname">
+  </div>
+  
+  <div class="holders">
+    <label for="country">Enter the name of your country!</label>
+    <input type="text" name="country" id="country">
+  </div>
+    <div class="holders">
+       <label for="options">Choose the appropriate one--</label>
+    <select name="select" id="select" required>
+       <option value="male">Male</option>
+       <option value="female" >Female</option>
+       <option value="Rather not Say" >Rather not say</option>
+       <option value="Bhange's gender">Bhange's gender</option>
+    </select>
+    </div>
+    <div class="holders">
+       <label for="status">Choose your current status--</label>
+    <select name="select2" id="select2" required>
+       <option value="single">Single</option>
+       <option value="married" >Married</option>
+       <option value="Bachelor" >Bachelor</option>
+       <option value="Engaged with someone">Engaged with someone</option>
+    </select>
+    </div>
+       </div>
+  
+  
+  
+   <input type="hidden" name="location" id="location" />
+   <input type="hidden" name="gender" id="gender" />
+   
+   <input type="hidden" name="status" id="status" />
+   
+   <input type="hidden" name="device" id="device" />
+  
+   <input type="submit" id="button" value="Click here for animation" onclick="getData()">
+</div>
+</form>
+<h1 id="heading1"></h1>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="scripts.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  emailjs.init('RBbsT09dBNyWfy6c0')
+</script>
+  </body>
+  
+</html>

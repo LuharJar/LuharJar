@@ -89,7 +89,7 @@ animation: appearance 1.5s forwards, flare 2s linear 1s infinite normal;
     
 }
 
-@media screen and (max-width: 639px ){
+    @media only screen and (max-device-width: 586px) {
    body{
       width: 285px;
    }
